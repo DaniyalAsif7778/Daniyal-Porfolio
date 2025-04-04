@@ -1,0 +1,414 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+
+ }
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+     background-color: rgb(0, 0, 33);
+     color: #ffffff;
+     overflow-x: hidden;
+ }
+
+ /* css for all a tags */
+ a {
+     color: #ffffff;
+     text-decoration: none;
+     font-family: Montserrat;
+     letter-spacing: 1px;
+
+ }
+
+ /* css for landing page */
+ .landing-page {
+     height: 100vh;
+     width: 100vw;
+ }
+
+ /* css for ladingpage header */
+ .landing-page-header {
+     width: 100vw;
+     box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+     -webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+
+ }
+
+ /* css for navbar */
+ .navbar {
+     width: 100%;
+     height: 68px;
+     padding: 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ /* css for navbar right */
+
+ .navbar .nav-right {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     padding: 20px;
+     margin-right: 10px;
+ }
+
+ /* Css for nav-menue */
+ .nav-menue {
+     font-size: larger;
+     font-family: Montserrat;
+ }
+
+ /* css for nav-logo h1 */
+ .nav-logo h1 {
+     font-family: Poppins;
+     font-weight: 500;
+     word-spacing: 1px;
+     letter-spacing: 1px;
+ }
+
+ /* Css for nav-left */
+ .navbar .nav-left {
+
+
+     display: none;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     z-index: 2;
+     height: 600px;
+     width: 300px;
+     background: #12123e;
+
+ }
+
+ /* css for close menue of links section */
+ .nav-left .close-menue {
+     height: 20px;
+     width: 20px;
+     margin: 8px 8px;
+     border-radius: 50%;
+     border: 1px solid white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .close-menue i {
+     border-radius: 50%;
+
+ }
+
+ /* Css for nav-left u; */
+ .nav-left ul {
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     margin: 30px;
+ }
+
+ /* Css for  navlinks list items */
+ .nav-left ul li {
+     padding-bottom: 3px;
+     list-style: none;
+     border-bottom: 1px solid white;
+ }
+
+
+ /* Css for header ends here */
+
+
+ /* Css for Main body of landing page */
+ .landing-page-main {
+     width: 100vw;
+     height: 90vh;
+
+     display: flex;
+     flex-direction: column-reverse;
+ }
+
+ /* CSS FOR MAIN LEFT */
+ .landing-page-main .main-left {
+     height: 50%;
+     width: 100%;
+
+     position: relative;
+
+ }
+
+ /* css for main left article */
+ .main-left article {
+     position: absolute;
+     top: 30%;
+     left: 40%;
+     transform: translate(-38%, -40%);
+
+ }
+
+ /* css for article child h1 */
+ .main-left article h1 {
+     font-size: 5vmin;
+     font-family: Roboto;
+     font-size: 3.8vmax;
+ }
+
+ /* css for making some words color blueviolet */
+ .main-left article h1 .purple {
+     color: rgb(170, 107, 228);
+     font-size: 4vmax;
+ }
+
+ /* css for landing-page-main main-right */
+ .landing-page-main .main-right {
+     height: 50%;
+     width: 100%;
+     position: relative;
+
+ }
+
+ /*  css for main right image */
+ .main-right img {
+     height: 244px;
+     width: 184px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     filter: drop-shadow(10px 10px 69px #12123e);
+     -webkit-filter: drop-shadow(10px 10px 69px #12123e);
+     -moz-filter: drop-shadow(10px 10px 69px #12123e);
+ }
+
+ /* Css for main section ends here of landing page */
+
+ /* Css for Skills Section  */
+
+ .Skills {
+     height: 100vh;
+     width: 100vw;
+
+ }
+
+ .Thechnical-Skills {
+     width: 100%;
+
+     display: flex;
+     flex-direction: column;
+
+ }
+
+
+ .Thechnical-Skills .heading {
+     margin-top: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     color: rgb(192, 132, 248);
+     text-decoration: underline;
+ }
+
+ .heading h1 {
+     font-size: 3vmax;
+     font-family: Roboto;
+     letter-spacing: 1px;
+     white-space: nowrap;
+     margin-left: 30px
+ }
+
+ .Skills-Card {
+
+     width: 100%;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .skill {
+     height: 120PX;
+     width: 270px;
+     background-image: linear-gradient(to right, rgb(19 4 73), #6a1ed3);
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ .skill h1 {
+     font-size: 20px;
+     font-family: Poppins;
+     font-weight: 400;
+ }
+
+ .skill img {
+
+     height: 30px;
+     width: 30px;
+ }
+
+
+
+
+
+
+ /* Css for Skill progress bar desining */
+ .skill .progress-bar {
+     width: 250px;
+     height: 10px;
+     background: rgba(63, 62, 62, 0.699);
+     border-radius: 10px;
+ }
+
+ .progress-bar .progress {
+     width: 60%;
+     height: 10px;
+     border-radius: 10PX;
+
+     background-image: linear-gradient(to right, #6a1ed3, rgb(19 4 73));
+     position: relative;
+ }
+
+ .progress .number {
+     height: 31px;
+     width: 34px;
+     position: absolute;
+     top: -36px;
+     left: 195px;
+     background-color: #673ab7;
+     padding: 4px 8px;
+     border-radius: 5px;
+
+ }
+
+ .number h1 {
+     font-size: 15px;
+ }
+
+ /* Css for above than 600px device */
+
+ @media (min-width:835px) {
+     /* Css for nav-menue */
+
+     .nav-menue {
+         display: none;
+     }
+
+     /* css for navbar */
+     .navbar {
+         width: 100%;
+         height: 68px;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+     }
+
+     .navbar .nav-left {
+
+
+         width: 60%;
+         height: 100%;
+         position: static;
+
+         display: inline-block;
+
+
+
+
+     }
+
+     .nav-left ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: start;
+         gap: 35px;
+         margin: 11px;
+
+     }
+
+     .nav-left ul li {
+         padding-bottom: 3px;
+         list-style: none;
+         border: none;
+     }
+
+     .nav-left .close-menue {
+
+         display: none;
+
+
+     }
+
+     .landing-page-main {
+         width: 100vw;
+         height: 90vh;
+
+         display: flex;
+         flex-direction: row;
+     }
+
+     .landing-page-main .main-left {
+         height: 100%;
+         width: 50%;
+
+         position: relative;
+
+     }
+
+     /* css for landing-page-main main-right */
+     .landing-page-main .main-right {
+         height: 100%;
+         width: 50%;
+         position: relative;
+
+     }
+
+     /*  css for main right image */
+     .main-right img {
+         height: 244px;
+         width: 184px;
+         position: absolute;
+         top: 40%;
+         left: 50%;
+         transform: translate(-40%, -50%);
+         filter: drop-shadow(10px 10px 69px #12123e);
+         -webkit-filter: drop-shadow(10px 10px 69px #12123e);
+         -moz-filter: drop-shadow(10px 10px 69px #12123e);
+     }
+
+     .main-left article {
+         position: absolute;
+         top: 41%;
+         left: 40%;
+         transform: translate(-40%, -41%);
+         margin: 36px;
+
+     }
+ }
+
+ @media (min-width:625px) {
+     .Skills-Card {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         place-content: center center;
+     }
+ }
+
+ @media (min-width:820px) {
+     .Skills-Card {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         place-content: center center;
+     }
+ }
