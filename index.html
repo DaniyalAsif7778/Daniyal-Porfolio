@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./portfolio.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('d7-qXzSLUnT7xVTbY')
+  </script>
     <title>My Portolio</title>
 
 
@@ -43,8 +48,8 @@
                         <!-- nav-links -->
                         <ul>
                             <li class="nav-links "><a href="./index.html">Home</a></li>
-                            <li class="nav-links"><a href="">About</a></li>
-                            <li class="nav-links"><a href="">Skills</a></li>
+                            <li class="nav-links"><a href="#About-Section">About</a></li>
+                            <li class="nav-links"><a href="#Skills-Section">Skills</a></li>
                             <li class="nav-links"><a href="./Github.html">GitHub</a></li>
                             <li class="nav-links"><a href="./Projects.html">Projects</a></li>
                         </ul>
@@ -75,7 +80,7 @@
         </section>
         <!-- LandingPage ends here  -->
         <!-- Skills section starts  from here -->
-        <section class="Skills">
+        <section class="Skills  " id="Skills-Section">
 
             <div class="Thechnical-Skills">
                 <div class="heading">
@@ -87,6 +92,114 @@
                 </div>
             </div>
         </section>
+        <!-- Skills section ends here  -->
+        <!-- About section starts from here -->
+        <section class="about" id="About-Section">
+            <div class="about-me">
+                <div class="about-heading">
+                    <h1>About Me</h1>
+                </div>
+
+
+                <div class="about-me-card">
+                    <div class="about-me-card-left">
+                        <img src="./Resources/images/PERSONEL.png" alt="">
+                    </div>
+                    <div class="about-me-card-right">
+                        <p>
+                        <h1>
+                            My name is Daniyal. I completed my secondary education from Dar-e-Arqam Model School,
+                            Mithial, where I built a strong academic foundation. After that, I pursued my intermediate
+                            education at The Spirit School, Bassal. I am passionate about learning and always strive to
+                            grow both personally and academically.
+                            I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I
+                            enjoy
+                            creating dynamic and responsive web applications that provide an excellent user experience.
+                            My goal is to continuously learn and improve my skills while contributing to exciting
+                            projects.
+                        </h1>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section ends here -->
+        <!-- Footer starts from here -->
+        <section class="footer-Section">
+            <footer id="Footer">
+                <div class="footer-left">
+                    <div class="My-info">
+                        <div class="name">
+                            <h1>Name :</h1>
+                            <h3>Daniyal Asif</h3>
+                        </div>
+                        <div class="Gmail">
+                            <h1>Gmail :</h1>
+                            <h3>daniyal.personel7778@gmail.com</h3>
+                        </div>
+                        <div class="Phone Number">
+                            <h1>Phone Number :</h1>
+                            <h3>03121982877</h3>
+                        </div>
+                    </div>
+                    <div class="web-links">
+                        <ul>
+                            <li class="footers-links"><a href="./index.html">Home</a></li>
+                            <li class="footers-links"><a href="#Skills-Section">Skills</a></li>
+                            <li class="footers-links"><a href="#About-Section">About</a></li>
+                            <li class="footers-links"><a href="./Github.html">GitHub</a></li>
+                            <li class="footers-links"><a href="./Projects.html">Projects</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="footer-right">
+
+                    <form id="form">
+                        <div class="heading">
+                            <h1 style="margin-left: 3px; margin-bottom: 5px; color: rgb(192, 132, 248);">Feedback &
+                                Contact</h1>
+                        </div>
+                        <section>
+                            <div id="Tittle">
+                                <lable for="Tittle">
+                                    <h4 class="contact-tittle">Tittle</h4>
+                                </lable>
+                                <input type="text" name="title" class="contact-input" required>
+                            </div>
+                            <div id="Name">
+                                <lable for="Name">
+                                    <h4 class="contact-tittle">Name</h4>
+                                </lable>
+                                <input type="text" name="name"  class="contact-input"  required>
+                            </div>
+                        </section>
+                        <section>
+                            <div id="Message">
+                                <lable for="Message">
+                                    <h4 class="contact-tittle">Message</h4>
+                                </lable>
+                                <textarea name="message" id=""  class="contact-input"  required ></textarea>
+
+
+                            </div>
+                            <div id="Gmail">
+                                <lable for="Gmail">
+                                    <h4 class="contact-tittle"> Gmail</h4>
+                                </lable>
+                               
+                                <input type="Email" name="email"   class="contact-input"  required>
+                            </div>
+                        </section>
+                        <section id="submit-section">
+                            <center>
+                            <button  type="submit"   class="submit-button">Submit</button>
+                        </center>   
+                        </section>      
+                    </form>
+                </div>
+            </footer>
+        </section>
     </main>
     <script>
         var typed = new Typed('#element', {
@@ -94,7 +207,7 @@
             typeSpeed: 50,
         });
     </script>
-
+   
 </body>
 
 </html>

@@ -13,8 +13,14 @@ let Skills = [
         progress: 70
     }, {
 
-        name: " JS",
+        name: " Tailwind",
         img: "./Resources/images/Tailwind.png",
+        progress: 30
+    },
+    {
+
+        name: "JS",
+        img: "./Resources/images/js.png",
         progress: 80
     },
     {
@@ -23,12 +29,7 @@ let Skills = [
         progress: 10,
     }
     ,
-    {
-
-        name: "Tailwind",
-        img: "./Resources/images/js.png",
-        progress: 30
-    }, {
+     {
 
         name: "React",
         img: "./Resources/images/React.png",
