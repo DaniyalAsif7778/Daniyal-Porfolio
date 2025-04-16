@@ -28,7 +28,7 @@ document.getElementById('form')
     }, (err) => {
       btn.innerHTML = 'Send Email';
       
-      alert(JSON.stringify(err));
+      alert("Please Check Your internet");
     });
 });
   
